@@ -1,0 +1,26 @@
+Support for PayPal API with Python/Django.
+
+Don't forget to add to the settings.py
+
+
+# PAYPAL
+PAYPAL_USER = ''
+PAYPAL_RECEIVER_EMAIL = ''
+PAYPAL_PASSWORD = ''
+PAYPAL_SIGNATURE = ''
+PAYPAL_RETURN_URL = ''
+PAYPAL_CANCEL_URL = ''
+PAYPAL_ENDPOINT = 'https://api-3t.paypal.com/nvp'
+PAYPAL_IPN_ENDPOINT = 'https://www.paypal.com/cgi-bin/webscr'
+PAYPAL_POST_URL = 'https://www.paypal.com/webscr'
+
+
+And add to INSTALLED_APPS the entry:
+
+    'paypal',
+
+
+We use satchmo for our e-commerce solution handler requests.
+
+
+http://www.satchmoproject.com/
